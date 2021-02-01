@@ -1,0 +1,51 @@
+{% extends 'blog/basic.html' %}
+
+{% block body %}
+<div class="container">
+    <div class="row mt-3">
+      <div class="col-md-8 blog-main">
+        <h3 class="pb-3 mb-3 ">
+          {{post.title}}
+        </h3>
+        <div class="fb-like" data-href="http://127.0.0.1:8000/blog/blogpost/{{post.post_id}}" data-width="" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div><br>
+  
+        <div class="blog-post">
+          <h2 class="blog-post-title">{{post.head0}}</h2>
+          <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+          <p>{{post.chead0}}</p>
+
+          <h2>{{post.head1}}</h2>
+          <p>{{post.chead1}}</p>
+          
+          <h2>{{post.head2}}</h2>
+          <p>{{post.chead2}}</p>
+
+          <div class="fb-comments" data-href="http://127.0.0.1:8000/blog/blogpost/{{post.post_id}}" data-numposts="1"></div>
+          <!-- <h3>Sub-heading</h3>
+          <p>You give a hundred reasons why, and you say you're really gonna try. Straight stuntin' yeah we do it like that. Calling out my name. ‘Cause I, I’m capable of anything.</p>
+          <pre><code>Example code block</code></pre>
+          <p>Before you met me I was alright but things were kinda heavy. You just gotta ignite the light and let it shine.</p> -->
+        </div><!-- /.blog-post -->
+  
+      </div><!-- /.blog-main -->
+  
+      <aside class="col-md-4 blog-sidebar">
+        <div class="p-4 mb-3 bg-light rounded">
+          <h4 class="font-italic">About</h4>
+          <p class="mb-0">Saw you downtown singing the Blues. Watch you circle the drain. Why don't you let me stop by? Heavy is the head that <em>wears the crown</em>. Yes, we make angels cry, raining down on earth from up above.</p><br>
+          <div class="fb-share-button" data-href="http://127.0.0.1:8000/blog/blogpost/{{post.post_id}}" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F127.0.0.1%3A8000%2Fblog%2Fblogpost%2F4&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+        </div>
+  
+        <div class="p-4">
+          <h4 class="font-italic">Contact Us</h4>
+          <ol class="list-unstyled">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ol>
+        </div>
+      </aside><!-- /.blog-sidebar -->
+  
+    </div><!-- /.row -->
+</div>
+{% endblock %}
