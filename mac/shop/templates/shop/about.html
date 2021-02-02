@@ -1,51 +1,77 @@
 {% extends 'shop/basic.html' %}
 {% block title %}About Us{% endblock%}
 {% block css %}
-.card-deck{
-  margin:0px;
-  background-color:green;
+body{
+
+  background-color:#b9c6d9;
+
 }
+.card-deck{
+  background-color:#b9c6d9;
+   margin-left:10px;
+  margin-right : 10px;
+
+}
+.jumbotron{
+ margin: 0px;
+}
+.card-deck h1{
+text-align:center;
+color: black;
+font-style: sans-serif;
+margin-left:40%;
+}
+
 {% endblock %}
 {% block body %}
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron" style="background-color: #b9c6d9;">
     <div class="container">
-      <h1 class="display-3">My Awesome Cart</h1>
-      <p>My Awesome Cart is an Indian e-commerce company headquartered in Bangalore, Karnataka, India and registered in Singapore [8]. The company initially focused on book sales, before expanding into other product categories such as consumer electronics, fashion, home essentials, groceries, and lifestyle products. The service competes primarily with Amazon's Indian subsidiary, and domestic rival, Snapdeal.[9][10] As of March 2017, My Awesome Cart held a 39.5% market share of India's e-commerce industry.[11] My Awesome Cart has a dominant position in the apparel segment bolstered by its acquisition of Myntra and was described as being "neck and neck" with Amazon in the sale of electronics and mobile phones.[12] My Awesome Cart also owns PhonePe, a mobile payments service based on the Unified Payments Interface..</p>
+      <h1 class="display-3">BroBasket Indian Online Store</h1>
+      <p>BroBasket is an final year student project on e-commerce. This is
+        initially focused on book sales, before expanding into other product
+        categories such as consumer electronics, fashion, home essentials, groceries, and lifestyle products. </p>
       <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
     </div>
   </div>
 
   <div class="card-deck">
-    <div class="card">
-      <img class="card-img-top" src="/media/shop/images/123.png" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Sandip Kushwaha</h5>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque adipisci corrupti perspiciatis asperiores beatae esse veniam quisquam quia ullam, architecto officia non? Perferendis, repellat.</p>
+        <h1 class="text-center">Team Members</h1>
+        <div class="card-deck">
+        <div class="card" id="card1">
+          <img class="card-img-top rounded-circle img-thumbnail" src="https://instagram.fdel27-2.fna.fbcdn.net/v/t51.2885-15/e35/121602186_675954066381101_8155629456295413460_n.jpg?_nc_ht=instagram.fdel27-2.fna.fbcdn.net&_nc_cat=105&_nc_ohc=q0ZMeywzQx8AX9TehkY&tp=1&oh=f61549e79964d1ac5dc8a38b1dd43f56&oe=60434194" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Sandip Kushwaha</h5>
+            <p class="card-text text-center">Hello Everyone this is Sandeep Kushwaha. Computer science undergraduate from Dr A.P.J Abdul Kalam
+            kalam Technical university, Lucknow. I am working on my final year project BroBasket</p>
+          </div>
+        </div>
+        <div class="card" id="card1">
+          <img class="card-img-top rounded-circle img-thumbnail" src="https://instagram.fdel27-1.fna.fbcdn.net/v/t51.2885-15/e35/120372021_1239700726381675_3901638764024182765_n.jpg?_nc_ht=instagram.fdel27-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=RzXVG-eCiHkAX-htOdT&tp=1&oh=6ae2cc6e063f5c8c95f2925fdbdeddac&oe=60425129" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Uday Pratap Yadaw</h5>
+            <p class="card-text text-center">Hello Everyone this is Uday Pratap. Computer science undergraduate from Dr A.P.J Abdul Kalam
+             Technical university, Lucknow. I am working on my final year project BroBasket</p>
+          </div>
+        </div>
+        <div class="card" id="card1">
+          <img class="card-img-top rounded-circle img-thumbnail" src="https://avatars.githubusercontent.com/u/74069290?s=400&u=114bff1a5a8aa1060a9842d43c7e50669cf195e7&v=4" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Abhishek Kushwaha</h5>
+            <p class="card-text text-center">Hello Everyone this is Abhishek Kushwaha. Computer science undergraduate from Dr A.P.J Abdul Kalam
+             Technical university, Lucknow. I am working on my final year project BroBasket</p>
+          </div>
+        </div>
+          <div class="card" id="card1">
+          <img class="card-img-top rounded-circle img-thumbnail"  src="https://instagram.fdel27-1.fna.fbcdn.net/v/t51.2885-15/e35/69473885_1166178880250163_1387516142543888316_n.jpg?_nc_ht=instagram.fdel27-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=-kV4TZalT6gAX9_0JwN&tp=1&oh=f7bd06c1147fdb727558f5950d6255a2&oe=60423C53" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Saif Khan</h5>
+            <p class="card-text text-center">Hello Everyone this is Saif Khan. Computer science undergraduate from Dr A.P.J Abdul Kalam
+             Technical university, Lucknow. I am working on my final year project BroBasket</p>
+          </div>
+        </div>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="/media/shop/images/123.png" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Sandip Kushwaha</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="/media/shop/images/123.png" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Sandip Kushwaha</h5>
-        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, aspernatur soluta totam tenetur, eum repellendus labore fugiat minima porro sit ab, fugit explicabo odio? Sequi!</p>
-      </div>
-    </div>
-      <div class="card">
-      <img class="card-img-top" src="/media/shop/images/123.png" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Sandip Kushwaha</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      </div>
-    </div>
-  </div>
 
 <footer class="bg-dark text-center text-lg-start">
   <!-- Copyright -->
