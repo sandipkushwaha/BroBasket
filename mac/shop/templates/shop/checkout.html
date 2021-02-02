@@ -2,12 +2,12 @@
 {% block title%} Checkout - My Awesome Cart{% endblock %}
 {% block css %}
 body{
-    background-color:grey;
+    background-color:#fff;
 }
 #chek{
     max-width: 726px;
-    background-color: lightblue;
-    border-radius: 30px;
+    background-color: #d3d3d3;
+    border-radius: 0px;
 }
 #submitbtn{
     margin-left: 32%;
@@ -21,16 +21,16 @@ body{
 {% endblock %}
 {% block body %}
 <div id="chek" class="container">
-    <div class="col my-4">
-        <h2>Review Your Cart Items</h2>
+    <div class="col my-4" >
+        <h2 class="text-center">Review Your Cart Items</h2>
         <div class="my-4">
             <ul class="list-group" id="items">
             </ul>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mt-3">
-                    <li class="breadcrumb-item active" aria-current="page"><p>Your Cart Total Is <b>Rs.<span
+                    <li class="breadcrumb-item active" aria-current="page"><p class="text-success " >Your Cart Total Is <b>Rs.<span
                                 id="totalPrice">
-                            </span></b> Enter your details below & place your order. Thanks for using My Awesome Cart!</p>
+                            </span></b> Enter your details below & place your order.</p>
                     </li>
                 </ol>
             </nav>
